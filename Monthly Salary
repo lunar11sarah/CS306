@@ -1,0 +1,33 @@
+*******************************************************************************/
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	
+	    Scanner scan = new Scanner(System.in);
+	    
+	    System.out.print("Total Sales: ");
+	    int tosa = scan.nextInt();
+	    
+	    System.out.print("Length of Service: ");
+	    int year = scan.nextInt();
+	    
+    	     if ( year >= 10) {
+    	        System.out.print("Monthly Salary : 25,000 ");
+    	        
+    	    } else if ( year <= 10) {
+    	        System.out.print("Monthly Salary : 18,000 ");
+    	    } 
+    	    
+    	 if ( tosa <=15000){
+    	     double toca = tosa * 0.25 ;
+    	     System.out.printf("Total Commission: "+ toca );
+    	 } else if ( tosa <= 5000){
+    	     double toca = tosa * 0.20 ;
+    	     System.out.printf("Total Commission: "+ toca );
+    	 } 
+	}
+
+
+}
