@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+
+	    Scanner scan = new Scanner(System.in);
+
+	    System.out.print("Total Sales: ");
+	    int tosa = scan.nextInt();
+
+	    System.out.print("Length of Service: ");
+	    int year = scan.nextInt();
+	    
+	    int a = 25000;
+	    int b = 18000;
+	   
+
+    	     if ( year >= 10) {
+    	        System.out.print("Monthly Salary : 25,000 ");
+                
+               if ( tosa <=15000){
+    	     double toca = tosa * 0.25 ;
+    	     System.out.println("Total Commission: "+ toca );
+    	     var profit  = toca+ a;
+    	     System.out.println("Total Profit: "+ profit );
+    	 }  else if ( tosa <= 5000){
+    	     double toca = tosa * 0.20 ;
+    	     System.out.println("Total Commission: "+ toca );
+    	     var profit  = toca+ a;
+    	     System.out.println("Total Profit: "+ profit );
+    	 } 
+
+
+
+    	    } else if ( year <= 10) {
+    	        System.out.println("Monthly Salary : 18,000 ");
+    	        	 if ( tosa <=15000){
+    	     double toca = tosa * 0.25 ;
+    	     System.out.println("Total Commission: "+ toca );
+    	     var profit  = toca+ b;
+    	     System.out.println("Total Profit: "+ profit );
+    	 } else if ( tosa <= 5000){
+    	     double toca = tosa * 0.20 ;
+    	     System.out.println("Total Commission: "+ toca );
+    	     var profit  = toca+ b;
+    	     System.out.println("Total Profit: "+ profit );
+    	 } 
+    	    } 
+
+    
+	}
+
+
+}
