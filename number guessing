@@ -1,0 +1,65 @@
+
+import java.util.Scanner;
+import java.util.Random;
+public class Main {
+public static void main(String[] args) {
+
+Scanner scanner = new Scanner(System.in);
+Random random = new Random();
+
+    
+        System.out.println("******** Number Guessing Game *********");
+        System.out.println(" Press 1: For Gameplay , Press 2: Exit ");
+        System.out.print("Start or Exit: ");
+    
+        int choice = scanner.nextInt();
+            while (choice != 2)
+           
+            { if (choice == 1) 
+            
+                { int RandomNumber = random.nextInt(10) + 1;
+                            
+                     System.out.print("Enter a number between 1 and 10:");
+                       int guess = scanner.nextInt();
+                
+                
+                      if (guess == RandomNumber) {
+                      System.out.println("Congratulations, you are correct!");
+                      
+                      for (int i = 0; i < 1;i++){
+                            for ( int j = 0 ; j < 50; j++) {
+                                System.out.print("*");
+                            }
+                            System.out.println();
+                                 }
+                     }   
+                
+                     else {
+                      System.out.println("Incorrect. Better luck next time!");
+                            for (int i = 0; i < 1;i++){
+                            for ( int j = 0 ; j < 50; j++) {
+                                System.out.print("*");
+                            }
+                            System.out.println();
+                                 }
+                     }
+                }   
+                
+                else { 
+                        System.out.println("Invalid Press. Press 1: For Gameplay, or Press 2: Exit.");
+                        }
+                        System.out.println("Press 1: For Start, Press 2: Exit");
+                        System.out.print("Start or Exit: ");
+                        
+                        choice = scanner.nextInt();
+                        
+                        
+            }
+        
+      System.out.println("Thanks Goodbye!");
+      
+    
+    }
+    
+    
+}
